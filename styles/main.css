@@ -67,7 +67,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
-  padding: 30px 14px 15px; }
+  padding: 30px 14px 15px;
+  margin-bottom: 50px; }
   .card__img-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -162,12 +163,18 @@ body {
   visibility: hidden; }
 
 .main {
-  display: grid;
-  grid-template-columns: repeat(4, 200px);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  grid-gap: 50px 48px;
-  margin-top: 50px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 50px auto;
+  padding: 0 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /*# sourceMappingURL=main.css.map */
